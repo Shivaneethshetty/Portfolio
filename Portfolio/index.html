@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- In your header nav (index.html) -->
+    <header class="header">
+      <div class="logo">My<span>Portfolio</span></div>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <!-- <a href="#contact">Contact</a> -->
+
+        <!-- Resume Download Button -->
+        <a href="./resume.pdf" download="My_Resume.pdf" class="resume-btn"
+          >Resume <i class="fa-solid fa-arrow-down"></i
+        ></a>
+      </nav>
+
+      <button id="themeToggle" class="theme-toggle">🌙</button>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <!-- Hero Section -->
+      <section id="home" class="section hero">
+        <div class="hero-content">
+          <!-- Text -->
+          <div class="hero-text">
+            <h1>Hi, I'm <span>Shivaneeth Keshav Shetty</span></h1>
+            <p><i class="fa-solid fa-laptop-code"></i> Frontend Developer</p>
+            <button class="btn" id="scrollToProjects">View My Work</button>
+          </div>
+
+          <!-- Photo -->
+          <div class="hero-photo">
+            <img id="profileImg" src="profile-dark.jpg" alt="My Photo" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-container">
+          <div class="edu-card">
+            <h3>Bachelor of Engineering</h3>
+            <p class="edu-school">
+              Alva's Institute of Engineering and Technology
+            </p>
+            <p class="edu-year">2021 - 2025</p>
+            <ul class="edu-details">
+              <li>CGPA: 8.6</li>
+              <!-- <li>Specialization: Web Development & UI/UX</li> -->
+              <li>Stream: Computer Science & Engineering</li>
+            </ul>
+          </div>
+
+          <div class="edu-card">
+            <h3>Higher Secondary (PUC)</h3>
+            <p class="edu-school">KLES Prerana PU Collage</p>
+            <p class="edu-year">2019 - 2021</p>
+            <ul class="edu-details">
+              <li>Percentage: 87.67%</li>
+              <li>Stream: PCMB</li>
+            </ul>
+          </div>
+
+          <div class="edu-card">
+            <h3>SSLC</h3>
+            <p class="edu-school">Shri Vivekanand English Medium School</p>
+            <p class="edu-year">Completed: 2019</p>
+            <ul class="edu-details">
+              <li>Percentage: 84.16%</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="javascript">
+            JavaScript
+          </button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card" data-category="javascript">
+            <h3>Weather Application</h3>
+            <p>
+              Weather application using HTML, CSS, JavaScript, and OpenWeather
+              API..
+            </p>
+            <!-- <a href="#" target="_blank">View Project</a> -->
+          </article>
+
+          <article class="project-card" data-category="javascript">
+            <h3>Calculator App</h3>
+            <p>Simple calculator using HTML, CSS, and JS.</p>
+            <!-- <a href="#" target="_blank">View Project</a> -->
+          </article>
+
+          <article class="project-card" data-category="javascript">
+            <h3>IT Facility Application</h3>
+            <p>
+              IT Facility Application using ReactJS and MongoDB while
+              collaborating effectively with the team and receiving positive
+              feedback..
+            </p>
+            <!-- <a href="#" target="_blank">View Project</a> -->
+          </article>
+
+          <article class="project-card" data-category="frontend">
+            <h3>Food Ordering Website</h3>
+            <p>Food Ordering Website using HTML, CSS.</p>
+            <!-- <a href="#" target="_blank">View Project</a> -->
+          </article>
+
+          <article class="project-card" data-category="frontend">
+            <h3>Portfolio v1</h3>
+            <p>Clean portfolio layout made with pure CSS.</p>
+            <!-- <a href="#" target="_blank">View Project</a> -->
+          </article>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section id="certifications" class="section">
+        <h2 class="section-title">Certifications</h2>
+
+        <div class="cert-container">
+          <div class="cert-card">
+            <h3>HTML & CSS Course</h3>
+            <p class="cert-org">MicroDegree</p>
+            <p class="cert-year">Completed: 2024</p>
+            <a href="./Html.jpg" class="cert-link" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+
+          <div class="cert-card">
+            <h3>Advanced Javascript Course</h3>
+            <p class="cert-org">MicroDegree</p>
+            <p class="cert-year">Completed: 2024</p>
+            <a href="./JavaScript.jpg" class="cert-link" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+
+          <div class="cert-card">
+            <h3>Salesforce Developer Catalyst Program</h3>
+            <p class="cert-org">futureskills prime</p>
+            <p class="cert-year">Completed: 2024</p>
+            <a href="./salesforce.pdf" class="cert-link" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+
+          <div class="cert-card">
+            <h3>TechA MongoDB Administration Certi cation</h3>
+            <p class="cert-org">Infosys Springboard</p>
+            <p class="cert-year">Completed: 2024</p>
+            <a href="./MongoDB.pdf" class="cert-link" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+
+          <div class="cert-card">
+            <h3>TechA Java Developer Certification</h3>
+            <p class="cert-org">Infosys Springboard</p>
+            <p class="cert-year">Completed: 2024</p>
+            <a href="./java.pdf" class="cert-link" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-list">
+          <div class="skill-item">HTML5</div>
+          <div class="skill-item">CSS3</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">Java</div>
+          <div class="skill-item">MongoDB</div>
+          <!-- <div class="skill-item">Responsive Design</div>
+          <div class="skill-item">Git & GitHub</div> -->
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <!-- <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message*</label>
+            <textarea id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </section> -->
+    </main>
+
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Shivaneeth Keshav Shetty. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
