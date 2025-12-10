@@ -264,13 +264,17 @@ body.light .header {
     }
 
     .nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav a {
         display: none;
-        /* simple version: hide nav on mobile */
     }
 
     .resume-btn {
         display: inline-block !important;
-        margin-left: 1rem;
+        margin-left: auto;
     }
 
 
@@ -542,4 +546,5 @@ Keep hero content aligned and prevent the photo from dropping .hero {
         margin: 0 auto;
     }
 }
+
 
