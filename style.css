@@ -371,8 +371,8 @@ body.light .header {
     }
 
     .hero-photo {
-        width: 150px;
-        height: 150px;
+        width: clamp(180px, 45vw, 240px);
+        height: clamp(180px, 45vw, 240px);
     }
 }
 
@@ -546,5 +546,6 @@ Keep hero content aligned and prevent the photo from dropping .hero {
         margin: 0 auto;
     }
 }
+
 
 
