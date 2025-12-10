@@ -447,30 +447,6 @@ body.light .header {
 
 }
 
-
-/* Resume button in nav (add to style.css) */
-.resume-btn {
-    border: 1px solid var(--accent);
-    padding: 0.35rem 0.9rem;
-    border-radius: 999px;
-    margin-left: 1.5rem;
-    font-size: 0.85rem;
-    text-decoration: none;
-    color: var(--accent);
-}
-
-.resume-btn:hover {
-    background: var(--accent);
-    color: #0b1120;
-}
-
-
-
-.resume-btn i {
-    font-size: 12px;
-}
-
-
 .social-icons {
     display: flex;
     gap: 1rem;
@@ -566,3 +542,4 @@ Keep hero content aligned and prevent the photo from dropping .hero {
         margin: 0 auto;
     }
 }
+
