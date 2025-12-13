@@ -108,4 +108,28 @@ if (yearSpan) {
 }
 
 
+function updateDateTime() {
+    const now = new Date();
+
+    document.getElementById("date").textContent =
+        now.toLocaleDateString("en-IN", {
+            weekday: "long",
+            day: "2-digit",
+            month: "long",
+            year: "numeric"
+        });
+
+    document.getElementById("time").textContent =
+        now.toLocaleTimeString("en-IN");
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+// toggle example
+document.getElementById("modeToggle").onclick = () => {
+    document.body.classList.toggle("light");
+};
+
+
 
