@@ -590,7 +590,7 @@ Keep hero content aligned and prevent the photo from dropping .hero {
 
 /* Light mode */
 body.light .datetime {
-    background: #ffffff;
+    background: #f9fafb;
     color: #0b1320;
 }
 
@@ -616,9 +616,9 @@ body.light .datetime {
     }
 
     body.light .datetime {
-        background: #0b1320;
+        background: #f9fafb;
         /* keep same color in light mode */
-        color: #4fc3ff;
+        color: #0b1320;
     }
 
     .datetime .date {
@@ -629,6 +629,7 @@ body.light .datetime {
         font-size: 16px;
     }
 }
+
 
 
 
