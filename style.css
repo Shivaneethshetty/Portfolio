@@ -575,5 +575,62 @@ Keep hero content aligned and prevent the photo from dropping .hero {
 }
 
 
+/* Default (Dark mode) */
+.datetime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: #111827;
+    color: #4fc3ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Light mode */
+body.light .datetime {
+    background: #ffffff;
+    color: #0b1320;
+}
+
+.datetime .date {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.datetime .time {
+    margin-top: 6px;
+    font-size: 18px;
+}
+
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .datetime {
+        min-height: auto;
+        padding: 20px;
+        background: #111827;
+        /* same color in dark & light */
+        color: #4fc3ff;
+    }
+
+    body.light .datetime {
+        background: #0b1320;
+        /* keep same color in light mode */
+        color: #4fc3ff;
+    }
+
+    .datetime .date {
+        font-size: 18px;
+    }
+
+    .datetime .time {
+        font-size: 16px;
+    }
+}
+
+
+
 
 
