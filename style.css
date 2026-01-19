@@ -633,5 +633,80 @@ body.light .datetime {
 
 
 
+/* Publications Section */
+.pub-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.pub-card {
+    background: var(--card);
+    padding: 1.4rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+    transition: 0.3s ease;
+}
+
+.pub-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+}
+
+.pub-card h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+
+.pub-org {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin-bottom: 0.7rem;
+}
+
+.pub-link {
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.pub-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* Publications – Mobile Responsive */
+@media (max-width: 768px) {
+    .pub-container {
+        grid-template-columns: 1fr;
+    }
+
+    .pub-card {
+        padding: 1.2rem;
+    }
+
+    .pub-card h3 {
+        font-size: 1rem;
+    }
+
+    .pub-org {
+        font-size: 0.9rem;
+    }
+
+    .pub-link {
+        font-size: 0.85rem;
+    }
+}
+
+
+
+
 
 
