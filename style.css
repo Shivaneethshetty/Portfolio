@@ -791,18 +791,19 @@ body.light-theme .skill-item{
 }
 
 body.light-theme .skill-item i{
-  color:#0f172a;
+  color:#fafcfb;
   font-size:18px;
 }
 
 body.light-theme .skill-item:hover{
-  background:#3b82f6;
-  color:#9ee9f0;
+  background:#9ee9f0;
+  color:#fafcfb;
 }
 
 body.light-theme .skill-item:hover i{
-  color:#9ee9f0;
+  color:#fafcfb;
 }
+
 
 
 
