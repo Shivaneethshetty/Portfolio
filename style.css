@@ -779,7 +779,7 @@ body.light-theme #skills{
 }
 
 body.light-theme .skill-item{
-  background:#ffffff;
+  background:#9ee9f0;
   border:2px solid #3b82f6;
   border-radius:30px;
   padding:10px 18px;
@@ -797,12 +797,13 @@ body.light-theme .skill-item i{
 
 body.light-theme .skill-item:hover{
   background:#3b82f6;
-  color:#ffffff;
+  color:#9ee9f0;
 }
 
 body.light-theme .skill-item:hover i{
-  color:#ffffff;
+  color:#9ee9f0;
 }
+
 
 
 
