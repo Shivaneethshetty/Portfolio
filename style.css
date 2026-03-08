@@ -710,3 +710,67 @@ body.light .datetime {
 
 
 
+.skills-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  justify-content:center;
+}
+
+.skill-item{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 16px;
+  border:1px solid #2a3b5f;
+  border-radius:25px;
+  font-size:15px;
+  transition:0.3s;
+}
+
+.skill-item i{
+  font-size:18px;
+}
+
+.skill-item:hover{
+  transform:scale(1.05);
+  background:#0f1f3a;
+}
+
+/* Tablet */
+@media (max-width: 1024px){
+  .skills-list{
+    gap:12px;
+  }
+
+  .skill-item{
+    padding:8px 14px;
+    font-size:14px;
+  }
+
+  .skill-item i{
+    font-size:16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  .skills-list{
+    gap:10px;
+  }
+
+  .skill-item{
+    padding:7px 12px;
+    font-size:13px;
+  }
+
+  .skill-item i{
+    font-size:15px;
+  }
+}
+
+
+
+
+
+
