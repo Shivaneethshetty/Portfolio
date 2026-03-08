@@ -773,4 +773,40 @@ body.light .datetime {
 
 
 
+/* Light Theme - Skills */
+body.light-theme #skills{
+  background:#f5f7fb;
+}
+
+body.light-theme .skill-item{
+  background:#ffffff;
+  border:2px solid #3b82f6;
+  border-radius:30px;
+  padding:10px 18px;
+  color:#0f172a;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  transition:0.3s;
+}
+
+body.light-theme .skill-item i{
+  color:#0f172a;
+  font-size:18px;
+}
+
+body.light-theme .skill-item:hover{
+  background:#3b82f6;
+  color:#ffffff;
+}
+
+body.light-theme .skill-item:hover i{
+  color:#ffffff;
+}
+
+
+
+
+
+
 
